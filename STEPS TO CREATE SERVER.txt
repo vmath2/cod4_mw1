@@ -1,115 +1,115 @@
-                           ************************************************************************************************
-                           ************************************************************************************************
-                           *                             CALL OF DUTY 4: MODERN WARFARE 1                                 *
-						   *                              STEPS TO CREATE PRIVATE SERVER                                  *
-                           *                                                                                   ~VRM       *
-                           ************************************************************************************************
-                           ************************************************************************************************
-						   
-																	
-	                            <------------------------ FORWARDING PORTS IN YOUR ROUTER --------------------------->
-								 
-								 In order to get your server detected in the master server of the COD2: MW1
-								 master server you need to make changes in the router by following these 
-								 steps:
-								 
-								 1) Get your default gateway by going to command prompt and type ipconfig/all
-								 2) Enter that default gateway in your web browser where you will be redirected
-									to your router home page.
-								 3) Depending on which company's your router belong to enter the default username
-									and password
-								 4) Once you have logged into you router's settings goto Advance -->Virtual Servers
-								 5) Open the virtual server page where you need to enter the port number and link it
-								    with your IPv4 address. IPv4 address can be find in the same manner where you 
-									as your default gateway.
-								 6) For COD4:MW1 you need to forward your router's port settings with following port
-									numbers:
+                   ************************************************************************************************
+                   ************************************************************************************************
+                   *                             CALL OF DUTY 4: MODERN WARFARE 1                                 *
+                      				              STEPS TO CREATE PRIVATE SERVER                                  
+                   *                                                                                   ~VRM       *
+                   ************************************************************************************************
+                   ************************************************************************************************
+ 
 									
-									                            UDP:28960
-									                            UDP:20800
-									                            UDP:20810
-								
-								 7) Once added these port numbers restart your router for changes to become effective
-								 
-								 
-								 
-								 
-								<------------------------ CHANGES IN COD:MW1 CONFIG file ------------------------>
-								 
-								 For your reference a config file "cod4-server-config.cfg" is available in this
-								 repository. Follow these steps:
-								 
-								 1) Open the config file and make these mandatory changes:
-								 
-									a) Change: seta name "Peaceman"         --> seta name "<Enter your active profile name>"
-									b) Change: seta net_ip "172.24.24.100"  --> seta net_ip "<Enter your IPv4 address>"
-									c) Change: seta sv_hostname""           --> seta sv_hostname"<Create your host name>"
-									d) Change: seta rcon_password "connect" --> seta rcon_password "<Create your RCon Password>"
-									
-								2) Save these changes and after that goto your local Call of Duty4 directory and 
-								   copy this file in Call of Duty 4\main and in 
-								   Call of Duty 4\players\profiles\<Your profile folder name>.
-									
-								3) These are the optional changes:
-									
-									a) Change: seta g_password "<Create your own game password>"
-								
+                     <------------------------ FORWARDING PORTS IN YOUR ROUTER --------------------------->
+ 
+ In order to get your server detected in the master server of the COD2: MW1
+ master server you need to make changes in the router by following these 
+ steps:
+ 
+ 1) Get your default gateway by going to command prompt and type ipconfig/all
+ 2) Enter that default gateway in your web browser where you will be redirected
+	to your router home page.
+ 3) Depending on which company's your router belong to enter the default username
+	and password
+ 4) Once you have logged into you router's settings goto Advance -->Virtual Servers
+ 5) Open the virtual server page where you need to enter the port number and link it
+    with your IPv4 address. IPv4 address can be find in the same manner where you 
+	as your default gateway.
+ 6) For COD4:MW1 you need to forward your router's port settings with following port
+	numbers:
+	
+	        UDP:20800
+	        UDP:20810
+	        UDP:28960
+
+ 7) Once added these port numbers restart your router for changes to become effective
+ 
+ 
+ 
+ 
+                     <------------------------ CHANGES IN COD:MW1 CONFIG file ------------------------>
+ 
+ For your reference a config file "cod4-server-config.cfg" is available in this
+ repository. Follow these steps:
+ 
+ 1) Open the config file and make these mandatory changes:
+ 
+	a) Change: seta name "Peaceman"         --> seta name "<Enter your active profile name>"
+	b) Change: seta net_ip "172.24.24.100"  --> seta net_ip "<Enter your IPv4 address>"
+	c) Change: seta sv_hostname""           --> seta sv_hostname"<Create your host name>"
+	d) Change: seta rcon_password "connect" --> seta rcon_password "<Create your RCon Password>"
+	
+2) Save these changes and after that goto your local Call of Duty4 directory and 
+   copy this file in Call of Duty 4\main and in 
+   Call of Duty 4\players\profiles\<Your profile folder name>.
+	
+3) These are the optional changes:
+	
+	a) Change: seta g_password "<Create your own game password>"
 
 
-								<------------------------ CREATE AND RUN iw3mp SHORTCUT ---------------------------------->
-								 
-								 1) Create iw3mp shortcut on your desktop present in your Call of Duty 4 directory.
-									*** NOTE: DO NOT MOVE, CREATE SHORTCUT OF IT ***
-									
-								 2) Rename your shorcut to 1.8 Dedicated Server.
-									
-								 3) Right click and open properties and enter the following
-									command in the target box:
-									
-												+set dedicated 2 +exec cod4-server-config.cfg +map_rotate
-												
-									*** NOTE: ADD THIS COMMAND LINE WITH A SPACE AFTER GIVEN PATH IN THE TARGET BOX. 
-									          DO NOT DELETE THE PATH IN THE TARGET BOX ***
-											 
-								 4) Run your 1.8 Dedicated Server after making above changes.
-								 
-								 
-								 <------------------------ MODERNRCON_V0.6 AND RUN COD4: MW1---------------------------------->
-								 
-								 1) Download this folder from the repository and start ModernRcon_v0.6 
-									application.
-									
-								 2) A Rcon interace will open up where you need to fill the following
-									parameters in order to connect to the server:
-									
-									Host:         <Your IPv4 address>
-									Rcon Password: <Your Rcon password set in config file>
-									Port Number: By default is 28960
-									
-								 3) Once you have entered the serve info click on connect and 
-									you will be connected to your COD 4: MW1 Server successfully
-									
-								 4) Finally run your COD4: MW1 Multiplayer and press ~(tild) to 
-									open rcon console and enter following command:
-									
-										connect <Your IPv4 Address>:28960 
-										
-										or
-										
-										connect <Your IPv4 Address>:28960 password:<Your game password> 
-										if you have set your server password.
-								
-								 5) Cheers you will be able to connect to your server and your friends
-									will be able to see your serve in master server list accordingly.
-									
-									
-								*******************************************************************************************
-																	:IMPORTANT NOTE:
-										
-								 SINCE YOUR IPv4 ADDRESS IS NOT STATIC, YOU NEED TO CHECK IT BEFORE RUNNING THE SERVER ELSE 
-								 YOU WILL NOT BE CONNECT TO YOUR SERVER.
-								 IF THERE IS A CHANGE IN YOUR IPv4 ADDRESS YOU NEED TO MAKE ALL THE CHANGES AGAIN IN THE ROUTER 
-								 SETTINGS WHERE YOU HAVE SETTED UP THE VIRTUAL SERVERS AND IN THE CONFIG FILE BEFORE YOU START 
-								 YOUR SERVER ACCORDINLGY.
-									
-								*********************************************************************************************
+
+                     <------------------------ CREATE AND RUN iw3mp SHORTCUT ---------------------------------->
+ 
+ 1) Create iw3mp shortcut on your desktop present in your Call of Duty 4 directory.
+	*** NOTE: DO NOT MOVE, CREATE SHORTCUT OF IT ***
+	
+ 2) Rename your shorcut to 1.8 Dedicated Server.
+	
+ 3) Right click and open properties and enter the following
+	command in the target box:
+	
+				+set dedicated 2 +exec cod4-server-config.cfg +map_rotate
+				
+	*** NOTE: ADD THIS COMMAND LINE WITH A SPACE AFTER GIVEN PATH IN THE TARGET BOX. 
+	          DO NOT DELETE THE PATH IN THE TARGET BOX ***
+			 
+ 4) Run your 1.8 Dedicated Server after making above changes.
+ 
+ 
+                     <------------------------ MODERNRCON_V0.6 AND RUN COD4: MW1---------------------------------->
+ 
+ 1) Download this folder from the repository and start ModernRcon_v0.6 
+	application.
+	
+ 2) A Rcon interace will open up where you need to fill the following
+	parameters in order to connect to the server:
+	
+	Host:         <Your IPv4 address>
+	Rcon Password: <Your Rcon password set in config file>
+	Port Number: By default is 28960
+	
+ 3) Once you have entered the serve info click on connect and 
+	you will be connected to your COD 4: MW1 Server successfully
+	
+ 4) Finally run your COD4: MW1 Multiplayer and press ~(tild) to 
+	open rcon console and enter following command:
+	
+		connect <Your IPv4 Address>:28960 
+		
+		or
+		
+		connect <Your IPv4 Address>:28960 password:<Your game password> 
+		if you have set your server password.
+
+ 5) Cheers you will be able to connect to your server and your friends
+	will be able to see your serve in master server list accordingly.
+	
+	
+*******************************************************************************************
+									:IMPORTANT NOTE:
+		
+ SINCE YOUR IPv4 ADDRESS IS NOT STATIC, YOU NEED TO CHECK IT BEFORE RUNNING THE SERVER ELSE 
+ YOU WILL NOT BE CONNECT TO YOUR SERVER.
+ IF THERE IS A CHANGE IN YOUR IPv4 ADDRESS YOU NEED TO MAKE ALL THE CHANGES AGAIN IN THE ROUTER 
+ SETTINGS WHERE YOU HAVE SETTED UP THE VIRTUAL SERVERS AND IN THE CONFIG FILE BEFORE YOU START 
+ YOUR SERVER ACCORDINLGY.
+ 
+*********************************************************************************************
