@@ -103,15 +103,15 @@
 		connect <Your IPv4 Address>:28960 password:<Your game password> 
 		if you have set your server password.
 
- 5) Cheers you will be able to connect to your server and your friends
-    will be able to see your serve in master server list accordingly.
+ 5) Cheers you will now be able to connect to your server and your friends
+    will be able to see your private server in master server list.
 	
 	
 *******************************************************************************************
 					 :IMPORTANT NOTE:
 		
- SINCE YOUR IPv4 ADDRESS IS NOT STATIC, YOU NEED TO CHECK IT BEFORE RUNNING THE SERVER ELSE 
- YOU WILL NOT BE CONNECT TO YOUR SERVER.
+ SINCE YOUR IPv4 ADDRESS IS NOT STATIC, YOU WILL NEED TO CHECK IT BEFORE RUNNING THE 
+ SERVER ELSE YOU WON'T BE ABLE TO CONNECT TO YOUR SERVER.
  IF THERE IS A CHANGE IN YOUR IPv4 ADDRESS YOU NEED TO MAKE ALL THE CHANGES AGAIN IN THE ROUTER 
  SETTINGS WHERE YOU HAVE SETTED UP THE VIRTUAL SERVERS AND IN THE CONFIG FILE BEFORE YOU START 
  YOUR SERVER ACCORDINLGY.
