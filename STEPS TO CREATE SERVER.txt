@@ -14,14 +14,19 @@
  steps:
  
  1) Get your default gateway by going to command prompt and type ipconfig/all
+ 
  2) Enter that default gateway in your web browser where you will be redirected
 	to your router home page.
+	
  3) Depending on which company's your router belong to enter the default username
 	and password
+	
  4) Once you have logged into you router's settings goto Advance -->Virtual Servers
+ 
  5) Open the virtual server page where you need to enter the port number and link it
-    with your IPv4 address. IPv4 address can be find in the same manner where you 
-	as your default gateway.
+    with your IPv4 address. IPv4 address can be find in the same manner where you as 
+	your default gateway.
+	
  6) For COD4:MW1 you need to forward your router's port settings with following port
 	numbers:
 	
@@ -46,8 +51,8 @@
 	c) Change: seta sv_hostname""           --> seta sv_hostname"<Create your host name>"
 	d) Change: seta rcon_password "connect" --> seta rcon_password "<Create your RCon Password>"
 	
-2) Save these changes and after that goto your local Call of Duty4 directory and 
-   copy this file in Call of Duty 4\main and in 
+2) Save these changes and after that goto your local Call of Duty4 directory and copy
+   this file in Call of Duty 4\main and in 
    Call of Duty 4\players\profiles\<Your profile folder name>.
 	
 3) These are the optional changes:
@@ -76,21 +81,21 @@
  
                      <------------------------ MODERNRCON_V0.6 AND RUN COD4: MW1---------------------------------->
  
- 1) Download this folder from the repository and start ModernRcon_v0.6 
-	application.
+ 1) Download this folder from the repository and start ModernRcon_v0.6
+    application.
 	
  2) A Rcon interace will open up where you need to fill the following
-	parameters in order to connect to the server:
+    parameters in order to connect to the server:
 	
 	Host:         <Your IPv4 address>
 	Rcon Password: <Your Rcon password set in config file>
 	Port Number: By default is 28960
 	
- 3) Once you have entered the serve info click on connect and 
-	you will be connected to your COD 4: MW1 Server successfully
-	
- 4) Finally run your COD4: MW1 Multiplayer and press ~(tild) to 
-	open rcon console and enter following command:
+ 3) Once you have entered the serve info click on connect and
+    you will be connected to your COD 4: MW1 Server successfully
+
+4) Finally run your COD4: MW1 Multiplayer and press ~(tild) to
+   open rcon console and enter following command:
 	
 		connect <Your IPv4 Address>:28960 
 		
@@ -100,11 +105,11 @@
 		if you have set your server password.
 
  5) Cheers you will be able to connect to your server and your friends
-	will be able to see your serve in master server list accordingly.
+    will be able to see your serve in master server list accordingly.
 	
 	
 *******************************************************************************************
-									:IMPORTANT NOTE:
+					 :IMPORTANT NOTE:
 		
  SINCE YOUR IPv4 ADDRESS IS NOT STATIC, YOU NEED TO CHECK IT BEFORE RUNNING THE SERVER ELSE 
  YOU WILL NOT BE CONNECT TO YOUR SERVER.
