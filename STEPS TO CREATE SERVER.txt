@@ -10,8 +10,7 @@
                      <------------------------ FORWARDING PORTS IN YOUR ROUTER --------------------------->
  
  In order to get your server detected in the master server of the COD2: MW1
- master server you need to make changes in the router by following these 
- steps:
+ you need to make changes in the router by following these steps:
  
  1) Get your default gateway by going to command prompt and type ipconfig/all
  
@@ -24,8 +23,8 @@
  4) Once you have logged into you router's settings goto Advance -->Virtual Servers
  
  5) Open the virtual server page where you need to enter the port number and link it
-    with your IPv4 address. IPv4 address can be find in the same manner where you as 
-    your default gateway.
+    with your IPv4 address. IPv4 address can be find in the same manner as your 
+    default gateway.
 	
  6) For COD4:MW1 you need to forward your router's port settings with following port
     numbers:
