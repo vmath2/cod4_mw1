@@ -1,7 +1,7 @@
                    ************************************************************************************************
                    ************************************************************************************************
                    *                             CALL OF DUTY 4: MODERN WARFARE 1                                 *
-                      				              STEPS TO CREATE PRIVATE SERVER                                  
+                      				  STEPS TO CREATE PRIVATE SERVER                                  
                    *                                                                                   ~VRM       *
                    ************************************************************************************************
                    ************************************************************************************************
@@ -16,19 +16,19 @@
  1) Get your default gateway by going to command prompt and type ipconfig/all
  
  2) Enter that default gateway in your web browser where you will be redirected
-	to your router home page.
+    to your router home page.
 	
  3) Depending on which company's your router belong to enter the default username
-	and password
+    and password
 	
  4) Once you have logged into you router's settings goto Advance -->Virtual Servers
  
  5) Open the virtual server page where you need to enter the port number and link it
     with your IPv4 address. IPv4 address can be find in the same manner where you as 
-	your default gateway.
+    your default gateway.
 	
  6) For COD4:MW1 you need to forward your router's port settings with following port
-	numbers:
+    numbers:
 	
 	        UDP:20800
 	        UDP:20810
@@ -69,7 +69,7 @@
  2) Rename your shorcut to 1.8 Dedicated Server.
 	
  3) Right click and open properties and enter the following
-	command in the target box:
+    command in the target box:
 	
 				+set dedicated 2 +exec cod4-server-config.cfg +map_rotate
 				
