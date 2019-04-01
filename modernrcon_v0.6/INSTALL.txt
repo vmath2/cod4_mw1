@@ -1,0 +1,12 @@
+To install ModernRcon_v0.6.zip, you simply need to extract the 
+contained "ModernRcon v0.6" folder someplace on your computer. 
+Wherever you extract the files, make sure they all stay together 
+and the directory structure is intact. If not, the program will 
+not run properly.
+
+You can make a shotcut to ModernRcon_v0.5.exe on your desktop.
+
+If you have any questions, visit www.CoDHQ.com and register 
+so you can post on the Forums. Please, when posting, state 
+which version of the program you have (Installer or ZIP) as 
+well as which version of ModernRcon you have (v0.6).

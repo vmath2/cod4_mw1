@@ -1,0 +1,2 @@
+Editing the contents of this directory manually may cause 
+ModernRcon to malfunction. You've been warned!
